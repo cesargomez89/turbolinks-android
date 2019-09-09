@@ -1,6 +1,5 @@
-$:.unshift File.dirname(__FILE__)+'/lib'
+# This file is used by Rack-based servers to start the application.
 
-require 'rubygems'
-require 'turbolinks_demo'
+require_relative 'config/environment'
 
-run TurbolinksDemo::App
+run Rails.application

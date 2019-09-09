@@ -1,0 +1,7 @@
+- flash.each do |key, value|
+  = value
+= form_for @session do |f|
+  = f.text_field :email
+  = f.password_field :password
+
+  = f.submit
