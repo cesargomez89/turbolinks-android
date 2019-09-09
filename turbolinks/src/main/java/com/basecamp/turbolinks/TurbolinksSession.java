@@ -19,10 +19,10 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import java.util.Date;
 import java.util.HashMap;
-
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 /**
  * <p>The main concrete class to use Turbolinks 5 in your app.</p>
@@ -146,7 +146,7 @@ public class TurbolinksSession implements TurbolinksScrollUpCallback {
                 resetToColdBoot();
 
                 turbolinksAdapter.onReceivedError(errorCode);
-                TurbolinksLog.d("onReceivedError: " + errorCode);
+                TurbolinksLog.d("onReceivedError: " + errorCode + description);
             }
 
             @Override

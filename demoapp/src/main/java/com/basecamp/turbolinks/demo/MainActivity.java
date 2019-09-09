@@ -3,15 +3,15 @@ package com.basecamp.turbolinks.demo;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.basecamp.turbolinks.TurbolinksAdapter;
 import com.basecamp.turbolinks.TurbolinksSession;
 import com.basecamp.turbolinks.TurbolinksView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class MainActivity extends AppCompatActivity implements TurbolinksAdapter {
     // Change the BASE_URL to an address that your VM or device can hit.
-    private static final String BASE_URL = "http://10.0.1.100:9292";
+    private static final String BASE_URL = "http://10.0.2.2:9292";
     private static final String INTENT_URL = "intentUrl";
 
     private String location;
